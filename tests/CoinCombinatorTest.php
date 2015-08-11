@@ -47,7 +47,7 @@
         function test_countCoins_oneNickel()
         {
             //Arrange
-            $test_coinCombinator = new CoinCombinator;
+            $test_CoinCombinator = new CoinCombinator;
             $cents = 5;
 
             //Act

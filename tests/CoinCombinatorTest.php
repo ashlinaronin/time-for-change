@@ -100,5 +100,24 @@
             );
             $this->assertEquals($desired_array, $result);
         }
+
+        function test_countCoins_oneDimeOneNickel()
+        {
+            //Arrange
+            $test_CoinCombinator = new CoinCombinator;
+            $cents = 15;
+
+            //Act
+            $result = $test_CoinCombinator->countCoins($cents);
+
+            //Assert
+            $desired_array = array(
+                "pennies" => 0,
+                "nickels" => 1,
+                "dimes"   => 1,
+                "quarters"=> 0
+            );
+            $this->assertEquals($desired_array, $result);
+        }
     }
 ?>
